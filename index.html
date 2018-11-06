@@ -1,0 +1,98 @@
+<DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Camping</title>
+    <link rel="stylesheet" href="CSS/design.css"/>
+    <link rel="stylesheet" href="CSS/nav.css"/>    
+    <link rel="stylesheet" href="CSS/home.css"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header id="main_header">
+        <h1>CAMPING TRIPS COLOMBIA</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> <!-- Calls itself.--->
+            <li><a href="who.html">Who we are</a></li>
+            <li><a href="ourp.php">Places</a></li>
+            <li><a href="oure.php">Employees</a></li>
+            <li><a href="combo.php">Combos</a></li>
+            <li><a href="cont.html">Contact</a></li>
+            <li><a href="sign.html">Sing up</a></li>
+            <li><a  style="cursor: default">Log in</a>
+                <ul>
+                    <li><a href="logem.html">As employee</a></li>
+                    <li><a href="logcm.html">As customer</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="home_section"> 
+   <!-- Main content here. -->
+
+        <div class="w3-content w3-display-container">
+            <div class="w3-display-container mySlides">
+                <img src="images_home/1.jpg" style="width:100%">
+                <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black" id="caption">
+                    A good reading is best done outdoors
+                </div>
+            </div>
+              
+            <div class="w3-display-container mySlides">
+                <img src="images_home/2.jpg" style="width:100%">
+                <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black" id="caption">
+                    Nature and best friends are always happiness
+                </div>
+            </div>
+              
+            <div class="w3-display-container mySlides">
+                <img src="images_home/3.jpg" style="width:100%">
+                <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black" id="caption">
+                    If you want to be part of the immensity, this is the place with great diversity
+                </div>
+            </div>
+              
+            <div class="w3-display-container mySlides">
+                <img src="images_home/4.jpg" style="width:100%">
+                <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black" id="caption">
+                    To strengthen the relationship with your loved ones this is your destiny
+                </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+                <img src="images_home/5.jpg" style="width:100%">
+                <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black" id="caption">
+                    In good company time has no duration, it becomes eternal
+                </div>
+            </div>
+
+        </div>    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length){
+                    myIndex = 1
+                }    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 4000);
+            }
+        </script>
+        
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+#inc_section{
+    color: red;
+    background-color: rgb(196, 200, 240);
+    font-family: 'Raleway', sans-serif;
+    height: 50%;
+    margin-top: 2%;
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p{
+    padding-left: 12%;
+}
+
+.clearfix{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+
