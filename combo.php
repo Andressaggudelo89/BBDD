@@ -37,15 +37,44 @@
             <p style="padding-left:10%">Please click on the desired region to visualize the combos available there</p>
             <img src="images_home/col.jpg" alt="Regions of Colombia" usemap="#Map" class="center" />
             <map name="Map" id="Map">
-                <area alt="" title="" href="pacifico.html" shape="poly" coords="97,123,114,167,105,199,89,230,78,246,66,237,94,192,87,135" />
-                <area alt="" title="" href="caribe.html" shape="poly" coords="193,60,160,106,145,124,133,125,116,123,107,136,104,119,119,98,129,74,164,61,196,44,212,44" />
-                <area alt="" title="" href="andina.html" shape="poly" coords="178,101,196,142,188,170,163,194,164,224,152,220,134,239,98,259,78,246,101,209,112,167,109,136,122,125" />
-                <area alt="" title="" href="orinoco.html" shape="poly" coords="201,140,231,141,248,155,284,154,278,189,259,191,240,190,223,209,193,213,178,219,163,205,171,192,186,177,197,160" />
-                <area alt="" title="" href="amazonas.html" shape="poly" coords="277,192,232,201,181,218,153,227,104,263,153,284,182,314,219,321,221,337,238,345,249,241,275,239,299,245" />
+                <area alt="" title="" href="#pacifico" onclick="myFunction('pacifico')" shape="poly" coords="97,123,114,167,105,199,89,230,78,246,66,237,94,192,87,135" />
+                <area alt="" title="" href="#caribe" onclick="myFunction('caribe')" shape="poly" coords="193,60,160,106,145,124,133,125,116,123,107,136,104,119,119,98,129,74,164,61,196,44,212,44" />
+                <area alt="" title="" href="#andina" onclick="myFunction('andina')" shape="poly" coords="178,101,196,142,188,170,163,194,164,224,152,220,134,239,98,259,78,246,101,209,112,167,109,136,122,125" />
+                <area alt="" title="" href="#orinoco" onclick="myFunction('orinoco')" shape="poly" coords="201,140,231,141,248,155,284,154,278,189,259,191,240,190,223,209,193,213,178,219,163,205,171,192,186,177,197,160" />
+                <area alt="" title="" href="#amazonas" onclick="myFunction('amazonas')" shape="poly" coords="277,192,232,201,181,218,153,227,104,263,153,284,182,314,219,321,221,337,238,345,249,241,275,239,299,245" />
             </map><hr>
-            Hello
-        </section>
+            <div id="egg">
+                Pacífico
+            </div>
 
+            <div id="egg">
+                Caribe
+            </div>
+
+            <div id="egg">
+                Andina
+            </div>
+
+            <div id="egg">
+                Orinoco
+            </div>
+
+            <div id="egg">
+                Amazonas
+            </div>
+        </section>
+        <script>
+            function myFunction(region) {
+                var x = document.getElementById("egg");
+                for(i=0; i<x.lenght; i++){
+                    if (x[i].style.display === "none") {
+                        x[i].style.display = "block";
+                    } else {
+                        x[i].style.display = "none";
+                    }
+                }
+            }
+</script>
     </body>
 </html>
 
@@ -61,14 +90,7 @@
         (6, "Los Flamencos Sanctuary", "Riohacha", "Caribe", "7:00-17:30", "(57 5) 7282636", "The visitor can enjoy the quietness of the clear blue skies of La Guajira peninsula, interrupted only by intensely pink skies spiraling over the lagoons of the Sanctuary.");
 
     Andean natural region:
-        Guatapé
-        Valle del Cocora
-        Nevado del Ruiz
-        Desierto de la tatacoa
-        Parque Nacional Natural El Tuparro
-        Parque Nacional Natural Los Nevados
-        Parque Nacional Natural Chingaza
-        Parque Nacional Natural Cueva de los Guácharos
+    
     Pacific/Chocó natural region:
         Parque Nacional Natural Utría
         lago calima
