@@ -17,7 +17,7 @@
         <nav id="main_nav">
             <ul>
                 <li><a href="index.html">Home</a></li> <!-- Calls itself.--->
-                <li><a href="who.html">Who we are</a></li>
+                <li><a href="who.html">About us</a></li>
                 <li><a href="ourp.php">Places</a></li>
                 <li><a href="oure.php">Employees</a></li>
                 <li><a href="combo.php">Combos</a></li>
@@ -33,7 +33,8 @@
         </nav>
 
         <section id="combo_section"> 
-            <h2>Here our plans go...</h2><hr>
+            <h2>Here our plans go...</h2>
+            <p style="padding-left:5%">If you are interested in any of our combos, please log in to book it.</p><hr>
             <p style="padding-left:10%">Please click on the desired region to visualize the combos available there</p>
             <img src="images_home/col.jpg" alt="Regions of Colombia" usemap="#Map" class="center" />
             <map name="Map" id="Map">
@@ -77,36 +78,3 @@
 </script>
     </body>
 </html>
-
-<!--
-    Caribbean region:
-        Tayrona National Natural Park
-        INSERT INTO place(id, name, location, region, hours, phone, description)
-        VALUES (1, "Tayrona National Natural Park", "Magdalena", "Caribe", "8:00-17:00", "(1) 3532400", "The foothills of the Sierra Nevada de Santa Marta, the highest coastal mountain in the world, plunge into the sea like the fingers of a gigantic hand forming beautiful bays and coves: Chengue, Gayraca, Cinto, Neguanje, Concha, Guachaquita, with their sandy white beaches surrounded by mangrove swamps, bushes and forests and bathed in the crystal clear water of the Caribbean sea, are all part of the many attractions in Tayrona National Natural Park."),
-        (2, "Sierra Nevada", "Santa Marta", "Caribe", "6:00-22:00", "312 4482695", "The Sierra Nevada de Santa Marta is the birthplace of the Tayrona, a monumental indigenous civilization that existed in the country."),
-        (3, "Rosario Islands", "Cartagena", "Caribe", "8:00-16:00", "+49 (0) 3056839445", "The Rosario Islands are an archipelago located within a national park on the Colombian Caribbean coast, only about an hour from the popular tourist city of Cartagena. They are beautiful, diverse, and well worth a visit, for a day or even longer. So here are 15 reasons why you should visit the Rosario Islands at least once in your lifetime."),
-        (4, "Tolú Coveñas", "Sincelejo", "Caribe", "7:30-15:30", "3116047950", "No description available for this place."),
-        (5, "El Totumo Volcano", "Santa Catalina", "Caribe", "8:00-15:00", "3116047950", "If you find yourself in Cartagena, chances are that you’ll come across posters advertising the Totumo Mud Volcano. It’s sort of a rite of passage in Cartagena – if you come here, you’ll visit the volcano."),
-        (6, "Los Flamencos Sanctuary", "Riohacha", "Caribe", "7:00-17:30", "(57 5) 7282636", "The visitor can enjoy the quietness of the clear blue skies of La Guajira peninsula, interrupted only by intensely pink skies spiraling over the lagoons of the Sanctuary.");
-
-    Andean natural region:
-    
-    Pacific/Chocó natural region:
-        Parque Nacional Natural Utría
-        lago calima
-        Bahía Solano
-        Paraíso Guachalito
-        Cabañas playa terco
-
-    Orinoquía natural region:
-        Parque Nacional Natural Puracé
-        Parque nacional natural El Tuparro
-        Sierra de la Macarena
-        Parque nacional natural El Cocuy
-
-    Amazon natural region:
-        Parque Ecologico Mundo Amazonico
-        Parque nacional natural Sierra de Chiribiquete
-        Parque nacional natural Amacayacu
-        Parque nacional natural Cahuinarí
--->

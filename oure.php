@@ -17,7 +17,7 @@
         <nav id="main_nav">
             <ul>
                 <li><a href="index.html">Home</a></li> <!-- Calls itself.--->
-                <li><a href="who.html">Who we are</a></li>
+                <li><a href="who.html">About us</a></li>
                 <li><a href="ourp.php">Places</a></li>
                 <li><a href="oure.php">Employees</a></li>
                 <li><a href="combo.php">Combos</a></li>
