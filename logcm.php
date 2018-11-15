@@ -9,7 +9,7 @@ $sql = "SELECT id FROM customer WHERE username = '$username' and password = '$pa
 $result = $conn->query($sql);
 
 if($result->num_rows > 0){      //The customer exists.
-    echo "This customer exists.";
+    include('customer_in.php');
 }else {
     include('incorrect.html');
 }

@@ -9,7 +9,7 @@ $sql = "SELECT id FROM employee WHERE username = '$username' and password = '$pa
 $result = $conn->query($sql);
 
 if($result->num_rows > 0){      //The employee exists.
-    echo "This employee exists.";
+    include('employee_in.php');
 }else{
     include('incorrect.html');
 }
