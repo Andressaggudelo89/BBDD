@@ -42,13 +42,15 @@
             mysqli_set_charset($conn, "utf8");
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
+                $cont = 1;
                 while($row = $result->fetch_assoc()){
                     echo
-                    "<div><hr></br><p>" .
+                    "<div><hr></br><p><img src='places/" . $cont . ".jpg' alt='Pineapple'>" .
                     "<ul><li><b>Name: </b>" . $row["name"] . "</li>" .
                     "<li><b>Location: </b>" . $row["location"] . "</li>" .
                     "<li><b>Hours of service: </b>" . $row["hours"] . "</li>" .
                     "<li><b>Description: </b>" . $row["description"] . "</li></ul></p></div>";
+                    $cont++;
                 }
             }else{?>
                 <p>There is not any information about employees to display.</p>
@@ -59,3 +61,18 @@
 
     </body>
 </html>
+
+
+
+<!--
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()){
+                    echo
+                    "<div><hr></br><p>" .
+                    "<ul><li><b>Name: </b>" . $row["name"] . "</li>" .
+                    "<li><b>Location: </b>" . $row["location"] . "</li>" .
+                    "<li><b>Hours of service: </b>" . $row["hours"] . "</li>" .
+                    "<li><b>Description: </b>" . $row["description"] . "</li></ul></p></div>";
+                }
+            }
+-->

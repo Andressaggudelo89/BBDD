@@ -11,3 +11,10 @@
 h2{
     padding-left: 5%;
 }
+
+p{
+    padding: 5%;
+    line-height: 140%;
+    text-align: justify;
+    text-align: center;
+}
